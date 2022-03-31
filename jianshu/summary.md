@@ -2,8 +2,11 @@
 
 # 简书文章总览
 ## 所有分类列表
+
+    **点击每个分类对应的空行可以展开分类下的所有文章列表**
+ 
 <details>
-<summary><a href="CAT1/ch0">Git学习笔记</a></summary>
+<summary><p><a href="CAT1/ch0">Git学习笔记</a></p></summary>
 <p><a href="CAT1/ch1">Linux中Git学习笔记（一）</a></p>
 <p><a href="CAT1/ch2">Linux中Git学习笔记（二）</a></p>
 <p><a href="CAT1/ch3">Linux中Git学习笔记（三）</a></p>
@@ -11,7 +14,7 @@
 </details>
 
 <details>
-<summary><a href="CAT2/ch0">软件安装配置</a></summary>
+<summary><p><a href="CAT2/ch0">软件安装配置</a></p></summary>
 <p><a href="CAT2/ch1">Windows下python虚拟环境中编译安装NovalIDE</a></p>
 <p><a href="CAT2/ch2">Windows下python虚拟环境中编译安装NovalIDE-v1.2.2</a></p>
 <p><a href="CAT2/ch3">MongoDB安装配置（ZIP版）</a></p>
