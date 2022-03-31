@@ -3,21 +3,21 @@
 # 简书文章总览
 ## 所有分类列表
 <details>
-<summary><a href="CAT1/ch0.md">Git学习笔记</a></summary>
-<p><a href="CAT1/ch1.md">Linux中Git学习笔记（一）</a></p>
-<p><a href="CAT1/ch2.md">Linux中Git学习笔记（二）</a></p>
-<p><a href="CAT1/ch3.md">Linux中Git学习笔记（三）</a></p>
-<p><a href="CAT1/ch4.md">Linux中Git学习笔记（四）</a></p>
+<summary><a href="CAT1/ch0">Git学习笔记</a></summary>
+<p><a href="CAT1/ch1">Linux中Git学习笔记（一）</a></p>
+<p><a href="CAT1/ch2">Linux中Git学习笔记（二）</a></p>
+<p><a href="CAT1/ch3">Linux中Git学习笔记（三）</a></p>
+<p><a href="CAT1/ch4">Linux中Git学习笔记（四）</a></p>
 </details>
 
 <details>
-<summary><a href="CAT2/ch0.md">软件安装配置</a></summary>
-<p><a href="CAT2/ch1.md">Windows下python虚拟环境中编译安装NovalIDE</a></p>
-<p><a href="CAT2/ch2.md">Windows下python虚拟环境中编译安装NovalIDE-v1.2.2</a></p>
-<p><a href="CAT2/ch3.md">MongoDB安装配置（ZIP版）</a></p>
-<p><a href="CAT2/ch4.md">Erlang和RabbitMQ（ZIP版）安装配置</a></p>
-<p><a href="CAT2/ch5.md">NodeJS安装配置（ZIP版）</a></p>
-<p><a href="CAT2/ch6.md">Redis安装配置（ZIP版）</a></p>
+<summary><a href="CAT2/ch0">软件安装配置</a></summary>
+<p><a href="CAT2/ch1">Windows下python虚拟环境中编译安装NovalIDE</a></p>
+<p><a href="CAT2/ch2">Windows下python虚拟环境中编译安装NovalIDE-v1.2.2</a></p>
+<p><a href="CAT2/ch3">MongoDB安装配置（ZIP版）</a></p>
+<p><a href="CAT2/ch4">Erlang和RabbitMQ（ZIP版）安装配置</a></p>
+<p><a href="CAT2/ch5">NodeJS安装配置（ZIP版）</a></p>
+<p><a href="CAT2/ch6">Redis安装配置（ZIP版）</a></p>
 </details>
 
 <!-- 
