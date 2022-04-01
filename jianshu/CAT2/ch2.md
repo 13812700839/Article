@@ -32,7 +32,7 @@ npm config set prefix "D:\project\tools\node-v14.16.1-win-x64\node_global"
 npm config set cache "D:\project\tools\node-v14.16.1-win-x64\node_cache"
 ```
 
-![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch5/ch5-1.png)
+![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch2/ch2-1.png)
 
 
 **注意：引号内的路径根据自己的具体路径进行修改**
@@ -45,14 +45,14 @@ npm config set cache "D:\project\tools\node-v14.16.1-win-x64\node_cache"
 
 检查node版本，输入命令node –v
 
-![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch5/ch5-2.png)
+![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch2/ch2-2.png)
 
 
 ### 3. 安装全模块<a name="2-3"></a>
 
 输入命令npm install express –g
 
-![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch5/ch5-3.png)
+![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch2/ch2-3.png)
 
 
 ## 三、测试运行<a name="测试运行"></a>
@@ -61,11 +61,11 @@ npm config set cache "D:\project\tools\node-v14.16.1-win-x64\node_cache"
 
 输入命令express –t ejs demo
 
-![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch5/ch5-4.png)
+![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch2/ch2-4.png)
 
 
 安装依赖，运行项目
 
 输入命令cd demo，npm install，npm start
 
-![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch5/ch5-5.png)
+![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch2/ch2-5.png)

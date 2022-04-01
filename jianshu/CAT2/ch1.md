@@ -18,7 +18,7 @@
 
 选择MongoDB Community Server，选择对应版本、平台
 
-![image.png](https://upload-images.jianshu.io/upload_images/23708684-9a679af8936a2636.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch1/ch1-1.png)
 
 下载完成后解压到自己的路径
 
