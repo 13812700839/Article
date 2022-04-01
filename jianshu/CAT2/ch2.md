@@ -4,14 +4,14 @@
 
 ## 目录
 
-[一、下载NodeJS的ZIP安装包](#一、下载NodeJS的ZIP安装包)  
-[二、配置和安装](#二、配置和安装)  
-    [1. 配置node的缓存路径和全模块路径](#1. 配置node的缓存路径和全模块路径)  
-    [2. 配置环境变量](#2. 配置环境变量)  
-    [3. 安装全模块](#3. 安装全模块)  
-[三、测试运行](#三、测试运行)  
+1. [下载NodeJS的ZIP安装包](#1)  
+2. [配置和安装](#配置和安装)  
+    1. [配置node的缓存路径和全模块路径](#2-1)  
+    2. [配置环境变量](#2-2)  
+    3. [安装全模块](#2-3)  
+3. [测试运行](#测试运行)  
 
-## 一、下载NodeJS的ZIP安装包
+## 一、下载NodeJS的ZIP安装包<a name="1"></a>
 
 根据系统版本去NodeJS官网下载ZIP安装包
 
@@ -19,9 +19,9 @@ NodeJS官网：[https://nodejs.org/en/](https://nodejs.org/en/)
 
 下载完成，解压到指定路径
 
-## 二、配置和安装
+## 二、配置和安装<a name="配置和安装"></a>
 
-### 1. 配置node的缓存路径和全模块路径
+### 1. 配置node的缓存路径和全模块路径<a name="2-1"></a>
 
 在node安装目录下新建node_cache和node_global两个文件夹
 
@@ -37,7 +37,7 @@ npm config set cache "D:\project\tools\node-v14.16.1-win-x64\node_cache"
 
 **注意：引号内的路径根据自己的具体路径进行修改**
 
-### 2. 配置环境变量
+### 2. 配置环境变量<a name="2-2"></a>
 
 创建环境变量NODE，node的安装路径
 
@@ -48,14 +48,14 @@ npm config set cache "D:\project\tools\node-v14.16.1-win-x64\node_cache"
 ![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch5/ch5-2.png)
 
 
-### 3. 安装全模块
+### 3. 安装全模块<a name="2-3"></a>
 
 输入命令npm install express –g
 
 ![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch5/ch5-3.png)
 
 
-## 三、测试运行
+## 三、测试运行<a name="测试运行"></a>
 
 创建一个项目进行测试
 

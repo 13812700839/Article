@@ -12,7 +12,6 @@
 ## 所有分类列表
 
 1. [Python](python/ch0.md)
-    1. [爬虫](python/crawler/ch0.md)
 
 ## 所有书单列表
 

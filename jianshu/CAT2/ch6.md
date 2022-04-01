@@ -6,39 +6,39 @@
 
 ## 目录
 
-[1. 源码编译步骤](#1. 源码编译步骤)  
-    [1.1 克隆 NovalIDE 项目](#1.1 克隆 NovalIDE 项目)  
-    [1.2 安装 pipenv 虚拟环境管理](#1.2 安装 pipenv 虚拟环境管理)  
-    [1.3 新建文件夹，在文件夹内进入命令行安装虚拟环境](#1.3 新建文件夹，在文件夹内进入命令行安装虚拟环境)  
-    [1.4 虚拟环境安装相应开发依赖](#1.4 虚拟环境安装相应开发依赖)  
-    [1.5 进入虚拟环境](#1.5 进入虚拟环境)  
-    [1.6 进入到 NovalIDE 文件夹，运行 NovalIDE.py](#1.6 进入到 NovalIDE 文件夹，运行 NovalIDE.py)  
-    [1.7 打包成 exe 文件](#1.7 打包成 exe 文件)  
-[2. 编译过程中遇到的问题](#2. 编译过程中遇到的问题)  
+1. [ 源码编译步骤](#1)  
+    1. [克隆 NovalIDE 项目](#1-1)  
+    2. [安装 pipenv 虚拟环境管理](#1-2)  
+    3. [新建文件夹，在文件夹内进入命令行安装虚拟环境](#1-3)  
+    4. [虚拟环境安装相应开发依赖](#1-4)  
+    5. [进入虚拟环境](#1-5)  
+    6. [进入到 NovalIDE 文件夹，运行 NovalIDE.py](#1-6)  
+    7. [打包成 exe 文件](#1-7)  
+2. [编译过程中遇到的问题](#2)  
 
-## 1. 源码编译步骤
+## 1. 源码编译步骤<a name="1"></a>
 
-### 1.1 克隆 NovalIDE 项目
+### 1.1 克隆 NovalIDE 项目<a name="1-1"></a>
 
 ```bash
 # dev 分支下的文件
 git clone https://gitee.com/wekay/NovalIDE.git
 ```
 
-### 1.2 安装 pipenv 虚拟环境管理
+### 1.2 安装 pipenv 虚拟环境管理<a name="1-2"></a>
 
 ```bash
 pip install pipenv
 ```
 
-### 1.3 新建文件夹，在文件夹内进入命令行安装虚拟环境
+### 1.3 新建文件夹，在文件夹内进入命令行安装虚拟环境<a name="1-3"></a>
 
 ```bash
 # 本文安装虚拟环境的 python 版本为3.8
 pipenv install --python 3.8
 ```
 
-### 1.4 虚拟环境安装相应开发依赖
+### 1.4 虚拟环境安装相应开发依赖<a name="1-4"></a>
 
 ```bash
 pipenv install pywin32 --dev
@@ -53,7 +53,7 @@ pipenv install pillow --dev
 pipenv install six --dev
 ```
 
-### 1.5 进入虚拟环境
+### 1.5 进入虚拟环境<a name="1-5"></a>
 
 从该步骤进入虚拟环境开始，后面步骤均在虚拟环境中完成
 
@@ -61,7 +61,7 @@ pipenv install six --dev
 pipenv shell
 ```
 
-### 1.6 进入到 NovalIDE 文件夹，运行 NovalIDE.py
+### 1.6 进入到 NovalIDE 文件夹，运行 NovalIDE.py<a name="1-6"></a>
 
 ```bash
 cd NovalIDE
@@ -69,13 +69,13 @@ cd NovalIDE
 python NovalIDE.py
 ```
 
-### 1.7 打包成 exe 文件
+### 1.7 打包成 exe 文件<a name="1-7"></a>
 
 ```bash
 pyinstaller pyinstaller.novalide.python.spec
 ```
 
-## 2. 编译过程中遇到的问题
+## 2. 编译过程中遇到的问题<a name="2"></a>
 
 *   **AttributeError: module 'time' has no attribute 'clock'**
 

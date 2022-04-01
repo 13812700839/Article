@@ -4,15 +4,15 @@
 
 ## 目录
 
-[一、下载Erlang和RabbitMQ安装包](#一、下载Erlang和RabbitMQ安装包)  
-[二、Erlang安装配置](#二、Erlang安装配置)  
-    [1. 安装](#1. 安装)  
-    [2. 配置](#2. 配置)  
-[三、RabbitMQ安装配置](#三、RabbitMQ安装配置)  
-    [1. 配置](#1. 配置)  
-    [2. 测试运行](#2. 测试运行)  
+1. [下载Erlang和RabbitMQ安装包](#1)  
+2. [Erlang安装配置](#2)  
+    1. [安装](#2-1)  
+    2. [配置](#2-2)  
+3. [RabbitMQ安装配置](#3)  
+    1. [配置](#3-1)  
+    2. [测试运行](#3-2)  
 
-## 一、下载Erlang和RabbitMQ安装包
+## 一、下载Erlang和RabbitMQ安装包<a name="1"></a>
 
 在Erlang官网和RabbitMQ官网，根据系统版本下载Erlang和RabbitMQ安装包
 
@@ -24,13 +24,13 @@ RabbitMQ压缩包下载地址：[https://www.rabbitmq.com/install-windows-manual
 
 RabbitMQ压缩包下载后解压到指定目录下
 
-## 二、Erlang安装配置
+## 二、Erlang安装配置<a name="2"></a>
 
-### 1. 安装
+### 1. 安装<a name="2-1"></a>
 
 双击运行exe文件，指定安装路径，等待安装完成
 
-### 2. 配置
+### 2. 配置<a name="2-2"></a>
 
 创建环境变量ERLANG_HOME，erl的安装路径
 
@@ -44,9 +44,9 @@ https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/jianshu/CAT2/ch4/ch4-1.png
 
 Erlang配置完成
 
-## 三、RabbitMQ安装配置
+## 三、RabbitMQ安装配置<a name="3"></a>
 
-### 1. 配置
+### 1. 配置<a name="3-1"></a>
 
 创建环境变量RABBITMQ_SERVER，rabbitMQ的安装目录
 
@@ -77,7 +77,7 @@ C:\Windows\System32\config\systemprofile\.erlang.cookie 
 
 同时删除：C:\Users\Lenovo\AppData\Roaming\RabbitMQ目录
 
-### 2. 测试运行
+### 2. 测试运行<a name="3-2"></a>
 
 输入命令rabbitmq-server.bat
 
