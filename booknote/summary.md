@@ -23,7 +23,7 @@
  
 <details>
 <p><summary style="user-select: none">Python</summary></p>
-<p style="user-select: none"><a href="python/ch1">Python基础知识汇总（一）——编程知识基础</a></p>
+<p style="user-select: none"><a href="python/ch1.html">Python基础知识汇总（一）——编程知识基础</a></p>
 </details>
 
 ## 按时间归档
@@ -34,6 +34,6 @@
 <p><summary style="user-select: none">2022</summary></p>
 <details style="margin-left: 5%">
 <p><summary style="user-select: none">Python</summary></p>
-<p style="user-select: none"><a href="python/ch1">Python基础知识汇总（一）——编程知识基础</a></p>
+<p style="user-select: none"><a href="python/ch1.html">Python基础知识汇总（一）——编程知识基础</a></p>
 </details>
 </details>

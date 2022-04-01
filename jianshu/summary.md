@@ -24,20 +24,20 @@
  
 <details>
 <p><summary style="user-select: none">Git学习笔记</summary></p>
-<p style="user-select: none"><a href="CAT1/ch1">Linux中Git学习笔记（一）</a></p>
-<p style="user-select: none"><a href="CAT1/ch2">Linux中Git学习笔记（二）</a></p>
-<p style="user-select: none"><a href="CAT1/ch3">Linux中Git学习笔记（三）</a></p>
-<p style="user-select: none"><a href="CAT1/ch4">Linux中Git学习笔记（四）</a></p>
+<p style="user-select: none"><a href="CAT1/ch1.html">Linux中Git学习笔记（一）</a></p>
+<p style="user-select: none"><a href="CAT1/ch2.html">Linux中Git学习笔记（二）</a></p>
+<p style="user-select: none"><a href="CAT1/ch3.html">Linux中Git学习笔记（三）</a></p>
+<p style="user-select: none"><a href="CAT1/ch4.html">Linux中Git学习笔记（四）</a></p>
 </details>
 
 <details>
 <p><summary style="user-select: none">软件安装配置</summary></p>
-<p style="user-select: none"><a href="CAT2/ch1">MongoDB安装配置（ZIP版）</a></p>
-<p style="user-select: none"><a href="CAT2/ch2">NodeJS安装配置（ZIP版）</a></p>
-<p style="user-select: none"><a href="CAT2/ch3">Redis安装配置（ZIP版）</a></p>
-<p style="user-select: none"><a href="CAT2/ch4">Erlang和RabbitMQ（ZIP版）安装配置</a></p>
-<p style="user-select: none"><a href="CAT2/ch5">Windows下python虚拟环境中编译安装NovalIDE</a></p>
-<p style="user-select: none"><a href="CAT2/ch6">Windows下python虚拟环境中编译安装NovalIDE-v1.2.2</a></p>
+<p style="user-select: none"><a href="CAT2/ch1.html">MongoDB安装配置（ZIP版）</a></p>
+<p style="user-select: none"><a href="CAT2/ch2.html">NodeJS安装配置（ZIP版）</a></p>
+<p style="user-select: none"><a href="CAT2/ch3.html">Redis安装配置（ZIP版）</a></p>
+<p style="user-select: none"><a href="CAT2/ch4.html">Erlang和RabbitMQ（ZIP版）安装配置</a></p>
+<p style="user-select: none"><a href="CAT2/ch5.html">Windows下python虚拟环境中编译安装NovalIDE</a></p>
+<p style="user-select: none"><a href="CAT2/ch6.html">Windows下python虚拟环境中编译安装NovalIDE-v1.2.2</a></p>
 </details>
 
 <!-- 
@@ -55,10 +55,10 @@
 <p><summary style="user-select: none">2020</summary></p>
 <details style="margin-left: 5%">
 <p><summary style="user-select: none">Git学习笔记</summary></p>
-<p style="user-select: none"><a href="CAT1/ch1">Linux中Git学习笔记（一）</a></p>
-<p style="user-select: none"><a href="CAT1/ch2">Linux中Git学习笔记（二）</a></p>
-<p style="user-select: none"><a href="CAT1/ch3">Linux中Git学习笔记（三）</a></p>
-<p style="user-select: none"><a href="CAT1/ch4">Linux中Git学习笔记（四）</a></p>
+<p style="user-select: none"><a href="CAT1/ch1.html">Linux中Git学习笔记（一）</a></p>
+<p style="user-select: none"><a href="CAT1/ch2.html">Linux中Git学习笔记（二）</a></p>
+<p style="user-select: none"><a href="CAT1/ch3.html">Linux中Git学习笔记（三）</a></p>
+<p style="user-select: none"><a href="CAT1/ch4.html">Linux中Git学习笔记（四）</a></p>
 </details>
 </details>
 
@@ -66,11 +66,11 @@
 <p><summary style="user-select: none">2021</summary></p>
 <details  style="margin-left: 5%">
 <p><summary style="user-select: none">软件安装配置</summary></p>
-<p style="user-select: none"><a href="CAT2/ch1">MongoDB安装配置（ZIP版）</a></p>
-<p style="user-select: none"><a href="CAT2/ch2">NodeJS安装配置（ZIP版）</a></p>
-<p style="user-select: none"><a href="CAT2/ch3">Redis安装配置（ZIP版）</a></p>
-<p style="user-select: none"><a href="CAT2/ch4">Erlang和RabbitMQ（ZIP版）安装配置</a></p>
-<p style="user-select: none"><a href="CAT2/ch5">Windows下python虚拟环境中编译安装NovalIDE</a></p>
-<p style="user-select: none"><a href="CAT2/ch6">Windows下python虚拟环境中编译安装NovalIDE-v1.2.2</a></p>
+<p style="user-select: none"><a href="CAT2/ch1.html">MongoDB安装配置（ZIP版）</a></p>
+<p style="user-select: none"><a href="CAT2/ch2.html">NodeJS安装配置（ZIP版）</a></p>
+<p style="user-select: none"><a href="CAT2/ch3.html">Redis安装配置（ZIP版）</a></p>
+<p style="user-select: none"><a href="CAT2/ch4.html">Erlang和RabbitMQ（ZIP版）安装配置</a></p>
+<p style="user-select: none"><a href="CAT2/ch5.html">Windows下python虚拟环境中编译安装NovalIDE</a></p>
+<p style="user-select: none"><a href="CAT2/ch6.html">Windows下python虚拟环境中编译安装NovalIDE-v1.2.2</a></p>
 </details>
 </details>

@@ -1,9 +1,9 @@
 [返回目录](ch0.md)  
 [返回本书文章列表](../../booklist/python/ch1.md)  
 
-# Python基础知识汇总（一）——编程知识基础
+# Python学习笔记（一）——编程知识基础
 
-以下所有知识均基于Python环境
+    本文内容是基于《看漫画学Python：有趣、有料、好玩、好用（全彩版）》的学习笔记
 
 ## 目录
 
@@ -40,6 +40,7 @@ Python中的关键字如下表所示：
 | if    | import | in       | is    | lambda | nonlocal |
 | not   | or     | pass     | raise | return | try      |
 | while | with   | yield    |       |        |          |
+
 ## 3. 变量<a name="3"></a>
 
 变量赋值的同时进行声明，变量数据类型为赋值数据的类型，变量在赋值后仍可接收其他类型的数据

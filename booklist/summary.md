@@ -23,7 +23,7 @@
  
 <details>
 <p><summary style="user-select: none">Python</summary></p>
-<p style="user-select: none"><a href="python/ch1">《看漫画学Python：有趣、有料、好玩、好用（全彩版）》</a></p>
+<p style="user-select: none"><a href="python/ch1.html">《看漫画学Python：有趣、有料、好玩、好用（全彩版）》</a></p>
 </details>
 
 ## 按时间归档
@@ -34,6 +34,6 @@
 <p><summary style="user-select: none">2022</summary></p>
 <details style="margin-left: 5%">
 <p><summary style="user-select: none">Python</summary></p>
-<p style="user-select: none"><a href="python/ch1">《看漫画学Python：有趣、有料、好玩、好用（全彩版）》</a></p>
+<p style="user-select: none"><a href="python/ch1.html">《看漫画学Python：有趣、有料、好玩、好用（全彩版）》</a></p>
 </details>
 </details>
