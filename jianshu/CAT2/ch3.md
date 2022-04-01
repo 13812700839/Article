@@ -1,77 +1,85 @@
 [返回目录](ch0.md)
 
-# MongoDB安装配置（ZIP版）
+# Redis安装配置（ZIP版）
 
-## 一、 准备工作
+## 目录
 
-从MongoDB官网下载MongoDB的ZIP安装包
+[一、下载Redis安装包](#一、下载Redis安装包)  
+[二、文件配置与安装](#二、文件配置与安装)  
+    [1. 临时服务安装](#1. 临时服务安装)  
+    [2. 默认服务安装](#2. 默认服务安装)  
+    [3. 自定义服务安装](#3. 自定义服务安装)  
 
-官网链接：[https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community)
+## 一、下载Redis安装包
 
-选择MongoDB Community Server，选择对应版本、平台
+根据系统版本下载Redis安装包
 
-![image.png](https://upload-images.jianshu.io/upload_images/23708684-9a679af8936a2636.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+Linux版本下载地址：[https://redis.io/download](https://redis.io/download)
 
-下载完成后解压到自己的路径
+Windows版本下载地址：[https://github.com/microsoftarchive/redis/releases](https://github.com/microsoftarchive/redis/releases)
 
-## 二、 文件配置与安装
+本文以Windows为例，下载完成后解压到自己的路径
 
-### 1. 文件配置
+## 二、文件配置与安装
 
-进入解压后的文件夹，新建data和log文件夹，并在log文件夹下，新建mongo.log空文件
+### 1. 临时服务安装
 
-新建mongo.conf文件与bin文件夹同级
-
-mongo.conf写入以下内容
-
-```
-# 数据库路径
-dbpath=E:\other_dev\mongodb\data  
-
-# 日志输出文件路径
-logpath=E:\other_dev\mongodb\logs\mongo.log  
-
-# 错误日志采用追加模式
-logappend=true  
-
-# 启用日志文件，默认启用 
-journal=true
-
-# 这个选项可以过滤掉一些无用的日志信息，若需要调试使用请设置为false  
-quiet=true
-
-# 端口号 默认为27017
-port=27017
-```
-
-**注：dbpath和logpath根据自己的具体路径进行修改**
-
-### 2. 安装
-
-从bin文件夹下进入命令行执行
+进入Redis解压后的目录，并在该目录下启动命令行，输入以下命令
 
 ```bash
-mongod --config "E:\other_dev\mongodb\mongo.conf"
+redis-server.exe redis.windows.conf
 ```
 
-**注：引号内的路径换成刚刚配置文件的路径**
+![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch6/ch6-1.png)
 
-执行后没有任何反应，则关掉该窗口
 
-## 三、 运行测试
+打开Redis解压后的目录中的redis-cli.exe，运行redis客户端，上一个窗口不能关闭
 
-从bin文件夹下进入命令行执行
+![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch6/ch6-2.png)
+
+
+使用临时服务安装，不会出现在Windows服务中
+
+### 2. 默认服务安装
+
+进入Redis解压后的目录，并在该目录下启动命令行，输入以下命令
 
 ```bash
-mongod --dbpath E:\other_dev\mongodb\data
+redis-server.exe --service-install redis.windows.conf --loglevel verbose
 ```
 
-**注：引号内的路径换成自己存放数据库的路径**
+**注：一定要把临时服务关闭，否则安装不上**
 
-启动完成后，不要关掉该窗口，重新从bin文件夹下进入命令行执行
+启动/暂停/卸载服务
 
 ```bash
-mongo
+# 启动
+redis-server.exe --service-start
+# 暂停
+redis-server.exe --service-stop
+# 卸载
+redis-server.exe --service-uninstall
 ```
 
-进入mongo命令行模式
+使用默认服务安装，会出现在Windows服务中
+
+### 3. 自定义服务安装
+
+进入Redis解压后的目录，并在该目录下启动命令行，输入以下命令
+
+```bash
+redis-server.exe --service-install redis.windows.conf --Service-name RedisServer1 --loglevel verbose
+```
+
+启动/暂停/卸载服务
+
+```bash
+# 启动
+redis-server.exe --service-start --Service-name RedisServer1
+# 暂停
+redis-server.exe --service-stop --Service-name RedisServer1
+#  卸载
+redis-server.exe --service-uninstall --Service-name RedisServer1
+```
+
+使用自定义服务安装，可以重命名服务名并会出现在Windows服务中

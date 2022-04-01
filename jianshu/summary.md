@@ -1,26 +1,43 @@
 [返回首页](../README.md)
 
 # 简书文章总览
+
+## 目录
+
+[所有分类列表](#所有分类列表)  
+[所有文章列表](#所有文章列表)  
+[按分类归档](#按分类归档)  
+[按时间归档](#按时间归档)  
+
 ## 所有分类列表
 
-    **点击每个分类对应的空行可以展开分类下的所有文章列表**
+[Git学习笔记](CAT1/ch0.md)  
+[软件安装配置](CAT2/ch0.md)  
+ 
+## 所有文章列表
+
+详见[文章列表](articlelist.md)
+
+## 按分类归档
+
+    点击每个分类名可以展开分类下的所有文章列表
  
 <details>
-<summary><p><a href="CAT1/ch0">Git学习笔记</a></p></summary>
-<p><a href="CAT1/ch1">Linux中Git学习笔记（一）</a></p>
-<p><a href="CAT1/ch2">Linux中Git学习笔记（二）</a></p>
-<p><a href="CAT1/ch3">Linux中Git学习笔记（三）</a></p>
-<p><a href="CAT1/ch4">Linux中Git学习笔记（四）</a></p>
+<p><summary style="user-select: none">Git学习笔记</summary></p>
+<p style="user-select: none"><a href="CAT1/ch1">Linux中Git学习笔记（一）</a></p>
+<p style="user-select: none"><a href="CAT1/ch2">Linux中Git学习笔记（二）</a></p>
+<p style="user-select: none"><a href="CAT1/ch3">Linux中Git学习笔记（三）</a></p>
+<p style="user-select: none"><a href="CAT1/ch4">Linux中Git学习笔记（四）</a></p>
 </details>
 
 <details>
-<summary><p><a href="CAT2/ch0">软件安装配置</a></p></summary>
-<p><a href="CAT2/ch1">Windows下python虚拟环境中编译安装NovalIDE</a></p>
-<p><a href="CAT2/ch2">Windows下python虚拟环境中编译安装NovalIDE-v1.2.2</a></p>
-<p><a href="CAT2/ch3">MongoDB安装配置（ZIP版）</a></p>
-<p><a href="CAT2/ch4">Erlang和RabbitMQ（ZIP版）安装配置</a></p>
-<p><a href="CAT2/ch5">NodeJS安装配置（ZIP版）</a></p>
-<p><a href="CAT2/ch6">Redis安装配置（ZIP版）</a></p>
+<p><summary style="user-select: none">软件安装配置</summary></p>
+<p style="user-select: none"><a href="CAT2/ch1">MongoDB安装配置（ZIP版）</a></p>
+<p style="user-select: none"><a href="CAT2/ch2">NodeJS安装配置（ZIP版）</a></p>
+<p style="user-select: none"><a href="CAT2/ch3">Redis安装配置（ZIP版）</a></p>
+<p style="user-select: none"><a href="CAT2/ch4">Erlang和RabbitMQ（ZIP版）安装配置</a></p>
+<p style="user-select: none"><a href="CAT2/ch5">Windows下python虚拟环境中编译安装NovalIDE</a></p>
+<p style="user-select: none"><a href="CAT2/ch6">Windows下python虚拟环境中编译安装NovalIDE-v1.2.2</a></p>
 </details>
 
 <!-- 
@@ -29,18 +46,31 @@
 [CodeWars网站介绍](./各种神奇网站的介绍/CodeWars网站介绍.md)
 </details>
  -->
-## 所有文章列表
+ 
+## 按时间归档
 
-| 文章名称                                                  | 分类                     | 发布状态 |
-|:-----------------------------------------------------:|:----------------------:|:----:|
-| [Linux中Git学习笔记（一）](CAT1/ch1.md)                       | [Git学习笔记](CAT1/ch0.md) | 已发布  |
-| [Linux中Git学习笔记（二）](CAT1/ch2.md)                       | [Git学习笔记](CAT1/ch0.md) | 已发布  |
-| [Linux中Git学习笔记（三）](CAT1/ch3.md)                       | [Git学习笔记](CAT1/ch0.md) | 已发布  |
-| [Linux中Git学习笔记（四）](CAT1/ch4.md)                       | [Git学习笔记](CAT1/ch0.md) | 已发布  |
-| [Windows下python虚拟环境中编译安装NovalIDE](CAT2/ch1.md)        | [软件安装配置](CAT2/ch0.md)  | 已发布  |
-| [Windows下python虚拟环境中编译安装NovalIDE-v1.2.2](CAT2/ch2.md) | [软件安装配置](CAT2/ch0.md)  | 已发布  |
-| [MongoDB安装配置（ZIP版）](CAT2/ch3.md)                      | [软件安装配置](CAT2/ch0.md)  | 已发布  |
-| [Erlang和RabbitMQ（ZIP版）安装配置](CAT2/ch4.md)              | [软件安装配置](CAT2/ch0.md)  | 已发布  |
-| [NodeJS安装配置（ZIP版）](CAT2/ch5.md)                       | [软件安装配置](CAT2/ch0.md)  | 已发布  |
-| [Redis安装配置（ZIP版）](CAT2/ch6.md)                        | [软件安装配置](CAT2/ch0.md)  | 已发布  |
+    点击时间展开当年发布的所有分类列表，点击分类列表展开所有文章列表
 
+<details>
+<p><summary style="user-select: none">2020</summary></p>
+<details style="margin-left: 5%">
+<p><summary style="user-select: none">Git学习笔记</summary></p>
+<p style="user-select: none"><a href="CAT1/ch1">Linux中Git学习笔记（一）</a></p>
+<p style="user-select: none"><a href="CAT1/ch2">Linux中Git学习笔记（二）</a></p>
+<p style="user-select: none"><a href="CAT1/ch3">Linux中Git学习笔记（三）</a></p>
+<p style="user-select: none"><a href="CAT1/ch4">Linux中Git学习笔记（四）</a></p>
+</details>
+</details>
+
+<details>
+<p><summary style="user-select: none">2021</summary></p>
+<details  style="margin-left: 5%">
+<p><summary style="user-select: none">软件安装配置</summary></p>
+<p style="user-select: none"><a href="CAT2/ch1">MongoDB安装配置（ZIP版）</a></p>
+<p style="user-select: none"><a href="CAT2/ch2">NodeJS安装配置（ZIP版）</a></p>
+<p style="user-select: none"><a href="CAT2/ch3">Redis安装配置（ZIP版）</a></p>
+<p style="user-select: none"><a href="CAT2/ch4">Erlang和RabbitMQ（ZIP版）安装配置</a></p>
+<p style="user-select: none"><a href="CAT2/ch5">Windows下python虚拟环境中编译安装NovalIDE</a></p>
+<p style="user-select: none"><a href="CAT2/ch6">Windows下python虚拟环境中编译安装NovalIDE-v1.2.2</a></p>
+</details>
+</details>

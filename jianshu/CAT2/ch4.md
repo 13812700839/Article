@@ -2,6 +2,16 @@
 
 # Erlang和RabbitMQ（ZIP版）安装配置
 
+## 目录
+
+[一、下载Erlang和RabbitMQ安装包](#一、下载Erlang和RabbitMQ安装包)  
+[二、Erlang安装配置](#二、Erlang安装配置)  
+    [1. 安装](#1. 安装)  
+    [2. 配置](#2. 配置)  
+[三、RabbitMQ安装配置](#三、RabbitMQ安装配置)  
+    [1. 配置](#1. 配置)  
+    [2. 测试运行](#2. 测试运行)  
+
 ## 一、下载Erlang和RabbitMQ安装包
 
 在Erlang官网和RabbitMQ官网，根据系统版本下载Erlang和RabbitMQ安装包

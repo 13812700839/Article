@@ -1,77 +1,112 @@
 [返回目录](ch0.md)
 
-# Redis安装配置（ZIP版）
+# Windows下python虚拟环境中编译安装NovalIDE-v1.2.2
 
-## 一、下载Redis安装包
+本文为本人编译打包 NovalIDE-v1.2.2 过程的记录，以防忘记
 
-根据系统版本下载Redis安装包
+## 目录
 
-Linux版本下载地址：[https://redis.io/download](https://redis.io/download)
+[1. 源码编译步骤](#1. 源码编译步骤)  
+    [1.1 克隆 NovalIDE 项目](#1.1 克隆 NovalIDE 项目)  
+    [1.2 安装 pipenv 虚拟环境管理](#1.2 安装 pipenv 虚拟环境管理)  
+    [1.3 新建文件夹，在文件夹内进入命令行安装虚拟环境](#1.3 新建文件夹，在文件夹内进入命令行安装虚拟环境)  
+    [1.4 虚拟环境安装相应开发依赖](#1.4 虚拟环境安装相应开发依赖)  
+    [1.5 进入虚拟环境](#1.5 进入虚拟环境)  
+    [1.6 进入到 NovalIDE 文件夹，运行 NovalIDE.py](#1.6 进入到 NovalIDE 文件夹，运行 NovalIDE.py)  
+    [1.7 打包成 exe 文件](#1.7 打包成 exe 文件)  
+[2. 编译过程中遇到的问题](#2. 编译过程中遇到的问题)  
 
-Windows版本下载地址：[https://github.com/microsoftarchive/redis/releases](https://github.com/microsoftarchive/redis/releases)
+## 1. 源码编译步骤
 
-本文以Windows为例，下载完成后解压到自己的路径
-
-## 二、文件配置与安装
-
-### 1. 临时服务安装
-
-进入Redis解压后的目录，并在该目录下启动命令行，输入以下命令
-
-```bash
-redis-server.exe redis.windows.conf
-```
-
-![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch6/ch6-1.png)
-
-
-打开Redis解压后的目录中的redis-cli.exe，运行redis客户端，上一个窗口不能关闭
-
-![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch6/ch6-2.png)
-
-
-使用临时服务安装，不会出现在Windows服务中
-
-### 2. 默认服务安装
-
-进入Redis解压后的目录，并在该目录下启动命令行，输入以下命令
+### 1.1 克隆 NovalIDE 项目
 
 ```bash
-redis-server.exe --service-install redis.windows.conf --loglevel verbose
+# dev 分支下的文件
+git clone https://gitee.com/wekay/NovalIDE.git
 ```
 
-**注：一定要把临时服务关闭，否则安装不上**
-
-启动/暂停/卸载服务
+### 1.2 安装 pipenv 虚拟环境管理
 
 ```bash
-# 启动
-redis-server.exe --service-start
-# 暂停
-redis-server.exe --service-stop
-# 卸载
-redis-server.exe --service-uninstall
+pip install pipenv
 ```
 
-使用默认服务安装，会出现在Windows服务中
-
-### 3. 自定义服务安装
-
-进入Redis解压后的目录，并在该目录下启动命令行，输入以下命令
+### 1.3 新建文件夹，在文件夹内进入命令行安装虚拟环境
 
 ```bash
-redis-server.exe --service-install redis.windows.conf --Service-name RedisServer1 --loglevel verbose
+# 本文安装虚拟环境的 python 版本为3.8
+pipenv install --python 3.8
 ```
 
-启动/暂停/卸载服务
+### 1.4 虚拟环境安装相应开发依赖
 
 ```bash
-# 启动
-redis-server.exe --service-start --Service-name RedisServer1
-# 暂停
-redis-server.exe --service-stop --Service-name RedisServer1
-#  卸载
-redis-server.exe --service-uninstall --Service-name RedisServer1
+pipenv install pywin32 --dev
+pipenv install pyinstaller --dev
+pipenv install psutil --dev
+pipenv install watchdog --dev
+pipenv install chardet --dev
+pipenv install pyperclip --dev
+pipenv install wmi --dev
+pipenv install requests --dev
+pipenv install pillow --dev
+pipenv install six --dev
 ```
 
-使用自定义服务安装，可以重命名服务名并会出现在Windows服务中
+### 1.5 进入虚拟环境
+
+从该步骤进入虚拟环境开始，后面步骤均在虚拟环境中完成
+
+```bash
+pipenv shell
+```
+
+### 1.6 进入到 NovalIDE 文件夹，运行 NovalIDE.py
+
+```bash
+cd NovalIDE
+ 
+python NovalIDE.py
+```
+
+### 1.7 打包成 exe 文件
+
+```bash
+pyinstaller pyinstaller.novalide.python.spec
+```
+
+## 2. 编译过程中遇到的问题
+
+*   **AttributeError: module 'time' has no attribute 'clock'**
+
+由于我使用的是Python3.8版本的，NovalIDE源码中有使用time.clock()，Python3.8 不再支持 time.clock()，可将 time.clock() 替换成 time.perf_counter()
+
+```python
+# noval/util/utils.py, line 294, line 296
+time.clock() -> time.perf_counter()
+```
+
+*   **PermissionError: [Errno 13] Permission denied**
+
+我打包时出现了这个问题是因为我后台运行了360程序，退出再重新运行一遍就可以打包成功了
+
+*   **ModuleNotFoundError: No module named 'distutils.version'**
+
+运行打包好的exe文件，出现该错误，是因为使用了 `from distutils.version import ...`，所以没有将 distutils.version 依赖打包
+
+在spec中的 hiddenimports 添加 distutils.version ，重新打包问题解决
+
+```
+a = Analysis(['NovalIDE.py'],
+      pathex=['./'],
+      binaries=[],
+      datas=datas,
+      hiddenimports=['noval.util.downutils','noval.python.pyeditor','noval.syntax.pat','site','noval.running','noval.shell','noval.roughparse','distutils.version'],
+      hookspath=[],
+      runtime_hooks=[],
+      excludes=['noval.util.command'],
+      win_no_prefer_redirects=False,
+      win_private_assemblies=False,
+      cipher=block_cipher,
+      noarchive=False)
+```

@@ -1,100 +1,85 @@
 [返回目录](ch0.md)
 
-# Windows下python虚拟环境中编译安装NovalIDE
+# MongoDB安装配置（ZIP版）
 
-本文为本人编译打包 NovalIDE 过程的记录，以防忘记
+## 目录
 
-## 1. 源码编译步骤
+[一、 准备工作](#一、 准备工作)  
+[二、 文件配置与安装](#二、 文件配置与安装)  
+    [1. 文件配置](#1. 文件配置)  
+    [2. 安装](#2. 安装)  
+[三、 运行测试](#三、 运行测试)  
 
-### 1.1 克隆 NovalIDE 项目
+## 一、 准备工作
+
+从MongoDB官网下载MongoDB的ZIP安装包
+
+官网链接：[https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community)
+
+选择MongoDB Community Server，选择对应版本、平台
+
+![image.png](https://upload-images.jianshu.io/upload_images/23708684-9a679af8936a2636.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+下载完成后解压到自己的路径
+
+## 二、 文件配置与安装
+
+### 1. 文件配置
+
+进入解压后的文件夹，新建data和log文件夹，并在log文件夹下，新建mongo.log空文件
+
+新建mongo.conf文件与bin文件夹同级
+
+mongo.conf写入以下内容
+
+```
+# 数据库路径
+dbpath=E:\other_dev\mongodb\data  
+
+# 日志输出文件路径
+logpath=E:\other_dev\mongodb\logs\mongo.log  
+
+# 错误日志采用追加模式
+logappend=true  
+
+# 启用日志文件，默认启用 
+journal=true
+
+# 这个选项可以过滤掉一些无用的日志信息，若需要调试使用请设置为false  
+quiet=true
+
+# 端口号 默认为27017
+port=27017
+```
+
+**注：dbpath和logpath根据自己的具体路径进行修改**
+
+### 2. 安装
+
+从bin文件夹下进入命令行执行
 
 ```bash
-# dev 分支下的文件
-git clone https://gitee.com/wekay/NovalIDE.git
+mongod --config "E:\other_dev\mongodb\mongo.conf"
 ```
 
-### 1.2 安装 pipenv 虚拟环境管理
+**注：引号内的路径换成刚刚配置文件的路径**
+
+执行后没有任何反应，则关掉该窗口
+
+## 三、 运行测试
+
+从bin文件夹下进入命令行执行
 
 ```bash
-pip install pipenv
+mongod --dbpath E:\other_dev\mongodb\data
 ```
 
-### 1.3 新建文件夹，在文件夹内进入命令行安装虚拟环境
+**注：引号内的路径换成自己存放数据库的路径**
+
+启动完成后，不要关掉该窗口，重新从bin文件夹下进入命令行执行
 
 ```bash
-# 本文安装虚拟环境的 python 版本为3.8
-pipenv install --python 3.8
+mongo
 ```
 
-### 1.4 虚拟环境安装相应开发依赖
-
-```bash
-pipenv install pywin32 --dev
-pipenv install pyinstaller --dev
-pipenv install psutil --dev
-pipenv install watchdog --dev
-pipenv install chardet --dev
-pipenv install pyperclip --dev
-pipenv install wmi --dev
-pipenv install requests --dev
-pipenv install pillow --dev
-pipenv install six --dev
-```
-
-### 1.5 进入虚拟环境
-
-从该步骤进入虚拟环境开始，后面步骤均在虚拟环境中完成
-
-```bash
-pipenv shell
-```
-
-### 1.6 进入到 NovalIDE 文件夹，运行 NovalIDE.py
-
-```bash
-cd NovalIDE
- 
-python NovalIDE.py
-```
-
-### 1.7 打包成 exe 文件
-
-```bash
-pyinstaller pyinstaller.novalide.python.spec
-```
-
-## 2. 编译过程中遇到的问题
-
-*   **AttributeError: module 'time' has no attribute 'clock'**
-
-由于我使用的是Python3.8版本的，NovalIDE源码中有使用time.clock()，Python3.8 不再支持 time.clock()，可将 time.clock() 替换成 time.perf_counter()
-
-```python
-# noval/util/utils.py, line 294, line 296
-time.clock() -> time.perf_counter()
-```
-
-*   **PermissionError: [Errno 13] Permission denied**
-
-我打包时出现了这个问题是因为我后台运行了360程序，退出再重新运行一遍就可以打包成功了
-
-*   **ModuleNotFoundError: No module named 'distutils.version'**
-
-运行打包好的exe文件，出现该错误，是因为使用了 `from distutils.version import ...`，所以没有将 distutils.version 依赖打包
-
-在spec中的 hiddenimports 添加 distutils.version ，重新打包问题解决
-
-```
-a = Analysis(['NovalIDE.py'],
-      pathex=['./'],
-      binaries=[],
-      datas=datas,
-      hiddenimports=['noval.util.downutils','noval.python.pyeditor','noval.syntax.pat','site','noval.running','noval.shell','noval.roughparse','distutils.version'],
-      hookspath=[],
-      runtime_hooks=[],
-      excludes=['noval.util.command'],
-      win_no_prefer_redirects=False,
-      win_private_assemblies=False,
-      cipher=block_cipher,
-      noarchive=False)
-```
+进入mongo命令行模式

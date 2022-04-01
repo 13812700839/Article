@@ -1,100 +1,71 @@
 [返回目录](ch0.md)
 
-# Windows下python虚拟环境中编译安装NovalIDE-v1.2.2
+# NodeJS安装配置（ZIP版）
 
-本文为本人编译打包 NovalIDE-v1.2.2 过程的记录，以防忘记
+## 目录
 
-## 1. 源码编译步骤
+[一、下载NodeJS的ZIP安装包](#一、下载NodeJS的ZIP安装包)  
+[二、配置和安装](#二、配置和安装)  
+    [1. 配置node的缓存路径和全模块路径](#1. 配置node的缓存路径和全模块路径)  
+    [2. 配置环境变量](#2. 配置环境变量)  
+    [3. 安装全模块](#3. 安装全模块)  
+[三、测试运行](#三、测试运行)  
 
-### 1.1 克隆 NovalIDE 项目
+## 一、下载NodeJS的ZIP安装包
 
-```bash
-# dev 分支下的文件
-git clone https://gitee.com/wekay/NovalIDE.git
-```
+根据系统版本去NodeJS官网下载ZIP安装包
 
-### 1.2 安装 pipenv 虚拟环境管理
+NodeJS官网：[https://nodejs.org/en/](https://nodejs.org/en/)
 
-```bash
-pip install pipenv
-```
+下载完成，解压到指定路径
 
-### 1.3 新建文件夹，在文件夹内进入命令行安装虚拟环境
+## 二、配置和安装
 
-```bash
-# 本文安装虚拟环境的 python 版本为3.8
-pipenv install --python 3.8
-```
+### 1. 配置node的缓存路径和全模块路径
 
-### 1.4 虚拟环境安装相应开发依赖
+在node安装目录下新建node_cache和node_global两个文件夹
 
-```bash
-pipenv install pywin32 --dev
-pipenv install pyinstaller --dev
-pipenv install psutil --dev
-pipenv install watchdog --dev
-pipenv install chardet --dev
-pipenv install pyperclip --dev
-pipenv install wmi --dev
-pipenv install requests --dev
-pipenv install pillow --dev
-pipenv install six --dev
-```
-
-### 1.5 进入虚拟环境
-
-从该步骤进入虚拟环境开始，后面步骤均在虚拟环境中完成
+输入以下命令
 
 ```bash
-pipenv shell
+npm config set prefix "D:\project\tools\node-v14.16.1-win-x64\node_global"
+npm config set cache "D:\project\tools\node-v14.16.1-win-x64\node_cache"
 ```
 
-### 1.6 进入到 NovalIDE 文件夹，运行 NovalIDE.py
+![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch5/ch5-1.png)
 
-```bash
-cd NovalIDE
- 
-python NovalIDE.py
-```
 
-### 1.7 打包成 exe 文件
+**注意：引号内的路径根据自己的具体路径进行修改**
 
-```bash
-pyinstaller pyinstaller.novalide.python.spec
-```
+### 2. 配置环境变量
 
-## 2. 编译过程中遇到的问题
+创建环境变量NODE，node的安装路径
 
-*   **AttributeError: module 'time' has no attribute 'clock'**
+在Path中添加%NODE%，%NODE%\node_global
 
-由于我使用的是Python3.8版本的，NovalIDE源码中有使用time.clock()，Python3.8 不再支持 time.clock()，可将 time.clock() 替换成 time.perf_counter()
+检查node版本，输入命令node –v
 
-```python
-# noval/util/utils.py, line 294, line 296
-time.clock() -> time.perf_counter()
-```
+![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch5/ch5-2.png)
 
-*   **PermissionError: [Errno 13] Permission denied**
 
-我打包时出现了这个问题是因为我后台运行了360程序，退出再重新运行一遍就可以打包成功了
+### 3. 安装全模块
 
-*   **ModuleNotFoundError: No module named 'distutils.version'**
+输入命令npm install express –g
 
-运行打包好的exe文件，出现该错误，是因为使用了 `from distutils.version import ...`，所以没有将 distutils.version 依赖打包
+![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch5/ch5-3.png)
 
-在spec中的 hiddenimports 添加 distutils.version ，重新打包问题解决
 
-```
-a = Analysis(['NovalIDE.py'],
-      pathex=['./'],
-      binaries=[],
-      datas=datas,
-      hiddenimports=['noval.util.downutils','noval.python.pyeditor','noval.syntax.pat','site','noval.running','noval.shell','noval.roughparse','distutils.version'],
-      hookspath=[],
-      runtime_hooks=[],
-      excludes=['noval.util.command'],
-      win_no_prefer_redirects=False,
-      win_private_assemblies=False,
-      cipher=block_cipher,
-      noarchive=False)
-```
+## 三、测试运行
+
+创建一个项目进行测试
+
+输入命令express –t ejs demo
+
+![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch5/ch5-4.png)
+
+
+安装依赖，运行项目
+
+输入命令cd demo，npm install，npm start
+
+![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch5/ch5-5.png)
