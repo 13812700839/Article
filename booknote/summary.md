@@ -12,7 +12,6 @@
 ## 所有分类列表
 
 1. [Python](python/ch0.md)
-    1. [爬虫](python/crawler/ch0.md)
 
 ## 所有文章列表
 
@@ -22,23 +21,19 @@
 
     点击每个分类名可以展开分类下的所有文章列表
  
-<!--  
 <details>
 <p><summary style="user-select: none">Python</summary></p>
-<p style="user-select: none"><a href="CAT2/ch1">MongoDB安装配置（ZIP版）</a></p>
+<p style="user-select: none"><a href="python/ch1">Python基础知识汇总（一）——编程知识基础</a></p>
 </details>
- -->
 
 ## 按时间归档
 
     点击时间展开当年发布的所有分类列表，点击分类列表展开所有文章列表
 
-<!-- 
 <details>
 <p><summary style="user-select: none">2022</summary></p>
 <details style="margin-left: 5%">
 <p><summary style="user-select: none">Python</summary></p>
-<p style="user-select: none"><a href="CAT1/ch1">Linux中Git学习笔记（一）</a></p>
+<p style="user-select: none"><a href="python/ch1">Python基础知识汇总（一）——编程知识基础</a></p>
 </details>
 </details>
- -->
