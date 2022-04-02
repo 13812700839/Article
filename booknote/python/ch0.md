@@ -4,4 +4,5 @@
 # Python
 
 1. [Python学习笔记（一）——编程知识基础](ch1.md)
-2. [Python学习笔记（二）——数字类型](../../booknote/python/ch2.md)
+2. [Python学习笔记（二）——数字类型](ch2.md)
+3. [Python学习笔记（三）——运算符](ch3.md)
