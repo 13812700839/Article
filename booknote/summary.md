@@ -23,7 +23,9 @@
  
 <details>
 <p><summary style="user-select: none">Python</summary></p>
-<p style="user-select: none"><a href="python/ch1.html">Python基础知识汇总（一）——编程知识基础</a></p>
+<p style="user-select: none"><a href="python/ch1.html">《看漫画学Python》学习笔记（一）——编程知识基础</a></p>
+<p style="user-select: none"><a href="python/ch2.html">《看漫画学Python》学习笔记（二）——数字类型</a></p>
+<p style="user-select: none"><a href="python/ch3.html">《看漫画学Python》学习笔记（一）——运算符</a></p>
 </details>
 
 ## 按时间归档
@@ -34,6 +36,8 @@
 <p><summary style="user-select: none">2022</summary></p>
 <details style="margin-left: 5%">
 <p><summary style="user-select: none">Python</summary></p>
-<p style="user-select: none"><a href="python/ch1.html">Python基础知识汇总（一）——编程知识基础</a></p>
+<p style="user-select: none"><a href="python/ch1.html">《看漫画学Python》学习笔记（一）——编程知识基础</a></p>
+<p style="user-select: none"><a href="python/ch2.html">《看漫画学Python》学习笔记（二）——数字类型</a></p>
+<p style="user-select: none"><a href="python/ch3.html">《看漫画学Python》学习笔记（一）——运算符</a></p>
 </details>
 </details>
