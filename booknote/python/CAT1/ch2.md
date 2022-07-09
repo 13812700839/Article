@@ -1,5 +1,5 @@
 [返回目录](ch0.md)  
-[返回本书文章列表](../../booklist/python/ch1.md) 
+[返回本书文章列表](../../../booklist/python/ch1.md) 
 
 # 《看漫画学Python》学习笔记（二）——数字类型
 

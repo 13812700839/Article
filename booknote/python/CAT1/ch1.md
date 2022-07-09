@@ -1,9 +1,15 @@
 [返回目录](ch0.md)  
-[返回本书文章列表](../../booklist/python/ch1.md)  
+[返回本书文章列表](../../../booklist/python/ch1.md)  
 
 # 《看漫画学Python》学习笔记（一）——编程知识基础
 
     本文内容是基于《看漫画学Python：有趣、有料、好玩、好用（全彩版）》的学习笔记
+
+## 文章导图
+
+<!-- https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/booknote/python/ch1/ch1-1.png -->
+
+![文章导图](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/booknote/python/CAT1/ch1/ch1-1.png "文章导图")
 
 ## 目录
 
@@ -54,7 +60,7 @@ num = 'Hello World!'
 
 ## 4. bug<a name="4"></a>
 
-程序中的缺陷、罗东、错误等。
+程序中的缺陷、漏洞、错误等。
 
 ## 5. 语句<a name="5"></a>
 
@@ -104,7 +110,7 @@ mod.sayHello()
 
 ### 2. from … import 导入模块<a name="7-2"></a>
 
-使用`from ... import ...`可以导入指定的代码元素，可以给导入的元素一个别名，可以通过别名或直接使用这些代码元素或
+使用`from ... import ...`可以导入指定的代码元素，可以给导入的元素一个别名，可以通过别名或代码元素名称直接使用这些代码元素
 
 ```python
 # module.py

@@ -13,6 +13,7 @@
 
 [Git学习笔记](CAT1/ch0.md)  
 [软件安装配置](CAT2/ch0.md)  
+[《看漫画学Python》](../booknote/python/CAT1/ch0.md) 
  
 ## 所有文章列表
 
@@ -38,6 +39,11 @@
 <p style="user-select: none"><a href="CAT2/ch4.html">Erlang和RabbitMQ（ZIP版）安装配置</a></p>
 <p style="user-select: none"><a href="CAT2/ch5.html">Windows下python虚拟环境中编译安装NovalIDE</a></p>
 <p style="user-select: none"><a href="CAT2/ch6.html">Windows下python虚拟环境中编译安装NovalIDE-v1.2.2</a></p>
+</details>
+
+<details>
+<p><summary style="user-select: none">《看漫画学Python》</summary></p>
+<p style="user-select: none"><a href="../booknote/python/CAT1/ch1.html">《看漫画学Python》学习笔记（一）——编程知识基础</a></p>
 </details>
 
 <!-- 
@@ -72,5 +78,13 @@
 <p style="user-select: none"><a href="CAT2/ch4.html">Erlang和RabbitMQ（ZIP版）安装配置</a></p>
 <p style="user-select: none"><a href="CAT2/ch5.html">Windows下python虚拟环境中编译安装NovalIDE</a></p>
 <p style="user-select: none"><a href="CAT2/ch6.html">Windows下python虚拟环境中编译安装NovalIDE-v1.2.2</a></p>
+</details>
+</details>
+
+<details>
+<p><summary style="user-select: none">2022</summary></p>
+<details  style="margin-left: 5%">
+<p><summary style="user-select: none">《看漫画学Python》</summary></p>
+<p style="user-select: none"><a href="../booknote/python/CAT1/ch1.html">《看漫画学Python》学习笔记（一）——编程知识基础</a></p>
 </details>
 </details>
