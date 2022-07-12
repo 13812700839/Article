@@ -5,6 +5,11 @@
 
     本文内容是基于《看漫画学Python：有趣、有料、好玩、好用（全彩版）》的学习笔记
 
+## 文章导图
+
+![文章导图](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/booknote/python/CAT1/ch2/ch2-1.png "文章导图")
+
+
 ## 目录
 
 1. [什么是数据类型](#1)
@@ -55,15 +60,15 @@ print(0x10)
 示例代码如下：
 
 ```python
-num = 3.14
-print(num)
-# 3.14
-print(type(num))
-# <class 'float'>
-print(314e-2)
-# 3.14
-print(0.314e1)
-# 3.14
+    num = 3.14
+    print(num)
+    # 3.14
+    print(type(num))
+    # <class 'float'>
+    print(314e-2)
+    # 3.14
+    print(0.314e1)
+    # 3.14
 ```
 
 ## 4. 复数类型<a name="4"></a>
