@@ -111,3 +111,5 @@ git log --pretty=format:'%h : %s' --topo-order --graph
 - git merge：合并分支
 - git reset：恢复版本
 - git log：查看日志  
+
+    本文于2020年07月23日在简书发布 [文章地址](https://www.jianshu.com/p/f86b68244eb3)

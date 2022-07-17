@@ -63,3 +63,5 @@ git gc
 ```bash
 git fsck
 ```
+
+    本文于2020年07月26日在简书发布 [文章地址](https://www.jianshu.com/p/b62d037f6c75)

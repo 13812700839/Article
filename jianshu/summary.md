@@ -44,6 +44,7 @@
 <details>
 <p><summary style="user-select: none">《看漫画学Python》</summary></p>
 <p style="user-select: none"><a href="../booknote/python/CAT1/ch1.html">《看漫画学Python》学习笔记（一）——编程知识基础</a></p>
+<p style="user-select: none"><a href="../booknote/python/CAT1/ch2.html">《看漫画学Python》学习笔记（二）——数据类型</a></p>
 </details>
 
 <!-- 
@@ -86,5 +87,6 @@
 <details  style="margin-left: 5%">
 <p><summary style="user-select: none">《看漫画学Python》</summary></p>
 <p style="user-select: none"><a href="../booknote/python/CAT1/ch1.html">《看漫画学Python》学习笔记（一）——编程知识基础</a></p>
+<p style="user-select: none"><a href="../booknote/python/CAT1/ch2.html">《看漫画学Python》学习笔记（二）——数据类型</a></p>
 </details>
 </details>

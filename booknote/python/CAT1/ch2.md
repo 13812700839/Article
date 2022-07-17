@@ -1,14 +1,13 @@
 [返回目录](ch0.md)  
 [返回本书文章列表](../../../booklist/python/ch1.md) 
 
-# 《看漫画学Python》学习笔记（二）——数字类型
+# 《看漫画学Python》学习笔记（二）——数据类型
 
     本文内容是基于《看漫画学Python：有趣、有料、好玩、好用（全彩版）》的学习笔记
 
 ## 文章导图
 
 ![文章导图](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/booknote/python/CAT1/ch2/ch2-1.png "文章导图")
-
 
 ## 目录
 
@@ -193,3 +192,5 @@ print(bool(1.0))
 print(bool(3.14))
 # True
 ```
+
+    本文于2021年07月17日在简书发布 [文章地址](https://www.jianshu.com/p/cd319682bd8d)

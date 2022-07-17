@@ -70,3 +70,5 @@ git stash apply stash@{标号}
 ```bash
 git stash clear
 ```
+
+    本文于2020年07月25日在简书发布 [文章地址](http://www.jianshu.com/p/8a4239e77370)

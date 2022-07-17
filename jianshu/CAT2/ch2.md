@@ -69,3 +69,7 @@ npm config set cache "D:\project\tools\node-v14.16.1-win-x64\node_cache"
 输入命令cd demo，npm install，npm start
 
 ![image.png](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/jianshu/CAT2/ch2/ch2-5.png)
+
+    本文于2021年06月24日在简书发布 [文章地址](https://www.jianshu.com/p/e3e000c67c81)  
+    本文于2021年07月19日在知乎发布 [文章地址](https://zhuanlan.zhihu.com/p/389704886)  
+    本文于2021年09月15日在CSDN发布 [文章地址](https://blog.csdn.net/qq_46106320/article/details/120306455)

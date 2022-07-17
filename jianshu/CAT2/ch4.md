@@ -100,3 +100,6 @@ rabbitmq启动成功，浏览器中[http://localhost:15672](http://localhost:156
 
 
 RabbitMQ部署完成
+
+    本文于2021年07月03日在简书发布 [文章地址](https://www.jianshu.com/p/c5d7481c6c51)  
+    本文于2021年07月31日在知乎发布 [文章地址](https://zhuanlan.zhihu.com/p/389703513)

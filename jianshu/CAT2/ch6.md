@@ -110,3 +110,7 @@ a = Analysis(['NovalIDE.py'],
       cipher=block_cipher,
       noarchive=False)
 ```
+
+    本文于2021年11月05日在简书发布 [文章地址](https://www.jianshu.com/p/cc0fd6f5c724)
+    本文于2022年04月03日在知乎发布 [文章地址](https://zhuanlan.zhihu.com/p/432858600)
+    本文于2021年11月05日在CSDN发布 [文章地址](https://blog.csdn.net/qq_46106320/article/details/121169841)

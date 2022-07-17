@@ -83,3 +83,8 @@ mongo
 ```
 
 进入mongo命令行模式
+
+    本文于2021年06月19日在简书发布 [文章地址](https://www.jianshu.com/p/4092643aa3c3)  
+    本文于2021年07月13日在知乎发布 [文章地址](https://zhuanlan.zhihu.com/p/389247092)  
+    本文于2021年07月31日在CSDN发布 [文章地址](https://blog.csdn.net/qq_46106320/article/details/119269582)
+    本文于2021年11月14日在头条发布 [文章地址](https://www.toutiao.com/article/7030333834583425575/)

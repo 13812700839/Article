@@ -16,6 +16,6 @@
 ## 相关笔记
 
 1. [《看漫画学Python》学习笔记（一）——编程知识基础](../../booknote/python/CAT1/ch1.md)
-2. [《看漫画学Python》学习笔记（二）——数字类型](../../booknote/CAT1/python/ch2.md)
-3. [《看漫画学Python》学习笔记（三）——运算符](../../booknote/CAT1/python/ch3.md)
-4. [《看漫画学Python》学习笔记（四）——程序流程控制](../../booknote/CAT1/python/ch4.md)
+2. [《看漫画学Python》学习笔记（二）——数据类型](../../booknote/python/CAT1/ch2.md)
+3. [《看漫画学Python》学习笔记（三）——运算符](../../booknote/python/CAT1/ch3.md)
+4. [《看漫画学Python》学习笔记（四）——程序流程控制](../../booknote/python/CAT1/ch4.md)

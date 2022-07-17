@@ -15,3 +15,4 @@
 | [Windows下python虚拟环境中编译安装NovalIDE](CAT2/ch5.md)                | [软件安装配置](CAT2/ch0.md)                          | 已发布  | 2021.11.05 |
 | [Windows下python虚拟环境中编译安装NovalIDE-v1.2.2](CAT2/ch6.md)         | [软件安装配置](CAT2/ch0.md)                          | 已发布  | 2021.11.05 |
 | [《看漫画学Python》学习笔记（一）——编程知识基础](../booknote/python/CAT1/ch1.md) | [《看漫画学Python》](../booknote/python/CAT1/ch0.md) | 已发布  | 2022.07.09 |
+| [《看漫画学Python》学习笔记（二）——数据类型](../booknote/python/CAT1/ch2.md)   | [《看漫画学Python》](../booknote/python/CAT1/ch0.md) | 已发布  | 2022.07.17 |

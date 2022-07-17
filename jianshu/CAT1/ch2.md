@@ -66,3 +66,5 @@ git tag 中使用 -a， -s 或是 -u 三个参数中任意一个，都会创建�
 ```bash
 git tag -a <标签名> <commit前八位> -m "标签信息"
 ```
+
+    本文于2020年07月24日在简书发布 [文章地址](https://www.jianshu.com/p/54628961ebb0)
