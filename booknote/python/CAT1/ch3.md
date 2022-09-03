@@ -5,7 +5,6 @@
 
     本文内容是基于《看漫画学Python：有趣、有料、好玩、好用（全彩版）》的学习笔记
 
-
 ## 文章导图
 
 ![文章导图](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/booknote/python/CAT1/ch3/ch3-1.png "文章导图")
@@ -258,3 +257,4 @@ print(num2 << 2)
 | 12  | not                      | 逻辑非       |
 | 13  | and, or                  | 逻辑与、逻辑或   |
 
+    本文于2022年09月03日在简书发布 [文章地址](https://www.jianshu.com/p/725086c7b9f5)

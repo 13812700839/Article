@@ -193,4 +193,4 @@ print(bool(3.14))
 # True
 ```
 
-    本文于2021年07月17日在简书发布 [文章地址](https://www.jianshu.com/p/cd319682bd8d)
+    本文于2022年07月17日在简书发布 [文章地址](https://www.jianshu.com/p/cd319682bd8d)
