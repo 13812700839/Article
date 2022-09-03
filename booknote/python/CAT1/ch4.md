@@ -233,6 +233,11 @@ while num < 1000:
     num += 1
         
 # 使用 for 语句实现
+sum = 0
+num1 = 0
+num2 = 0
+num3 = 0
+
 for num in range(100, 1000):
     num1 = num // 100
     num2 = (num % 100) // 10
