@@ -5,6 +5,11 @@
 
     本文内容是基于《看漫画学Python：有趣、有料、好玩、好用（全彩版）》的学习笔记
 
+
+## 文章导图
+
+![文章导图](https://cdn.jsdelivr.net/gh/13812700839/MyImageBed/article/booknote/python/CAT1/ch3/ch3-1.png "文章导图")
+
 ## 目录
 
 1. [什么是运算符](#1)
