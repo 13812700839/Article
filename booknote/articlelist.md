@@ -6,5 +6,5 @@
 |:-------------------------------------------------:|:-----------------------:|:----:|:----------:|:----:|
 | [《看漫画学Python》学习笔记（一）——编程知识基础](python/CAT1/ch1.md) | [Python](python/ch0.md) | 已发布  | 2022.07.09 | 简书   |
 | [《看漫画学Python》学习笔记（二）——数据类型](python/CAT1/ch2.md)   | [Python](python/ch0.md) | 已发布  | 2022.07.17 | 简书   |
-| [《看漫画学Python》学习笔记（三）——运算符](python/CAT1/ch3.md)    | [Python](python/ch0.md) | 未发布  |            |      |
+| [《看漫画学Python》学习笔记（三）——运算符](python/CAT1/ch3.md)    | [Python](python/ch0.md) | 已发布  | 2022.09.03 | 简书   |
 | [《看漫画学Python》学习笔记（四）——程序流程控制](python/CAT1/ch4.md) | [Python](python/ch0.md) | 未发布  |            |      |
